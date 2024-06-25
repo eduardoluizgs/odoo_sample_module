@@ -1,2 +1,3 @@
-# odoo_sample_module
-Este repositório contém um exemplo de módulo Odoo
+# Odoo Sample Module
+
+Este repositório contém um exemplo de módulo Odoo.

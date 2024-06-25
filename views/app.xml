@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <!-- BLOCK : MENU -->
+
+            <!-- Main Menu -->
+            <menuitem id="menu_odoo_sample_module"
+                      name="Módulo de Exemplo"
+                      parent=""
+                      sequence="3"
+                      groups="base.group_user" />
+
+                <!--BLOCK MENU : Register -->
+                <menuitem id="menu_odoo_sample_module_register"
+                        name="Cadastros"
+                        parent="menu_odoo_sample_module"
+                        sequence="1"
+                        groups="base.group_user"/>
+
+                    <!-- Geral -->
+                    <menuitem id="menu_odoo_sample_module_register_general"
+                            name="Geral"
+                            parent="menu_odoo_sample_module_register"
+                            sequence="1"
+                            groups="base.group_user"/>
+
+                    <!-- BLOCK MENU :  Geral -->
+
+                        <!-- Get Started -->
+                        <menuitem id="menu_odoo_sample_module_register_general_get_started"
+                                name="Get Started"
+                                parent="menu_odoo_sample_module_register_general"
+                                sequence="1"
+                                action="action_odoo_sample_module_get_started"
+                                groups="base.group_user" />
+
+                        <!-- Modelo de Exemplo -->
+                        <menuitem id="menu_odoo_sample_module_register_general_modelo_exemplo"
+                                name="Modelo de Exemplo"
+                                parent="menu_odoo_sample_module_register_general"
+                                sequence="2"
+                                action="action_odoo_sample_module_sample_model"
+                                groups="base.group_user" />
+
+                        <!-- Métodos de Pagamento -->
+                        <menuitem id="menu_odoo_sample_module_register_general_metodo_pagamento"
+                                name="Métodos de Pagamento"
+                                parent="menu_odoo_sample_module_register_general"
+                                sequence="3"
+                                action="action_odoo_sample_module_metodo_pagamento"
+                                groups="base.group_user" />
+
+                    <!-- END BLOCK MENU :  Geral -->
+
+                <!-- END BLOCK MENU : Register -->
+
+        <!-- END BLOCK : MENU -->
+
+    </data>
+</odoo>
